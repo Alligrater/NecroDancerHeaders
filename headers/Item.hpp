@@ -113,7 +113,7 @@ public:
     inline static List * GetAllItemsInClass(String * itemClass) { return ptr::GetAllItemsInClass(itemClass); }
     inline static String * GetWeaponShapeClass(String * t) { return ptr::GetWeaponShapeClass(t); }
     inline static String * ChangeWeaponMaterial(String * t, String * materialClass) { return ptr::ChangeWeaponMaterial(t, materialClass); }
-    inline static void CreateAmountOfCoins(int xVal, int yVal, int amt) { ptr::CreateAmountOfCoins(xVal, yVal, amt); }
+    inline static void CreateAmountOfCoins(int xVal, int yVal, int amt) { ptr::CreateAmountOfCoins(xVal, yVal, amt); } //xVal is actually not xVal, but the amount of coins.
     inline static int GetIntAttribute(String * i, String * attr, int dflt) { return ptr::GetIntAttribute(i, attr, dflt); }
     inline virtual int GetIntAttribute(String * attr, int dflt) { return ptr::GetIntAttribute_2(this, attr, dflt); }
     inline virtual void SetMystery() { ptr::SetMystery(this); }
